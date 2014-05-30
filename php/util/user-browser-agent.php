@@ -1,19 +1,19 @@
 <?php
-class Tools {
+class userBrowserAgent {
 	/**
-	 * èŽ·å–UserInfo
+	 * »ñÈ¡UserInfo
 	 *
 	 * @param string $type
 	 *        	if type == all, return array. else, return string.
-	 *        	å¯é€‰å‚æ•°ï¼š
-	 *        	all = å…¨éƒ¨
-	 *        	host = åŸŸå
-	 *        	language = è¯­è¨€
-	 *        	ip = å®¢æˆ·IP
-	 *        	browser = æµè§ˆå™¨ä¿¡æ¯
-	 *        	system = ç³»ç»Ÿä¿¡æ¯
-	 *        	referer = ä»Žå“ªä¸ªURLè·³è½¬è¿‡æ¥çš„
-	 *        	method = è¯·æ±‚é¡µé¢æ‰€ç”¨æ–¹æ³• get,post,head,put
+	 *        	¿ÉÑ¡²ÎÊý£º
+	 *        	all = È«²¿
+	 *        	host = ÓòÃû
+	 *        	language = ÓïÑÔ
+	 *        	ip = ¿Í»§IP
+	 *        	browser = ä¯ÀÀÆ÷ÐÅÏ¢
+	 *        	system = ÏµÍ³ÐÅÏ¢
+	 *        	referer = ´ÓÄÄ¸öURLÌø×ª¹ýÀ´µÄ
+	 *        	method = ÇëÇóÒ³ÃæËùÓÃ·½·¨ get,post,head,put
 	 */
 	public function userAgent($type = 'all') {
 		$agentInfo = array (
@@ -33,7 +33,7 @@ class Tools {
 	}
 	
 	/**
-	 * é€šè¿‡æ­£åˆ™èŽ·å–æµè§ˆå™¨ä¿¡æ¯
+	 * Í¨¹ýÕýÔò»ñÈ¡ä¯ÀÀÆ÷ÐÅÏ¢
 	 */
 	function getBrowser() {
 		$Agent = $_SERVER ['HTTP_USER_AGENT'];
@@ -62,7 +62,7 @@ class Tools {
 	}
 	
 	/**
-	 * é€šè¿‡æ­£åˆ™èŽ·å–æ“ä½œç³»ç»Ÿä¿¡æ¯
+	 * Í¨¹ýÕýÔò»ñÈ¡²Ù×÷ÏµÍ³ÐÅÏ¢
 	 */
 	function getSystem() {
 		$Agent = $_SERVER ['HTTP_USER_AGENT'];
