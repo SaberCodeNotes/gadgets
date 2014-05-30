@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<script src="jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+$(document).keydown(function(event){
+console.log(event);
+ if(event.ctrlKey && event.which!=17){
+  $('#keyWhich').html('CTRL+值'+event.which);
+ }else if(event.shiftKey && event.which!=16){
+  $('#keyWhich').html('SHIFT+值'+event.which);
+ }else{
+ $('#keyWhich').html('值为'+event.which);
+ }
+ return false;
+ });
+});
+
+</script>
+</head>
+<body>
+<div>
+<img src="1.png"/>
+<img src="2.png"/>
+<div style="font-size:60px;">您按下了：<span style="color:red;font-weight:bold;" id="keyWhich"></span>&nbsp;&nbsp;&nbsp;的按键</div>
+</div>
+</body>
+</html>

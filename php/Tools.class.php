@@ -14,7 +14,6 @@ class Tools {
 	 *        	system = 系统信息
 	 *        	referer = 从哪个URL跳转过来的
 	 *        	method = 请求页面所用方法 get,post,head,put
-	 *        	
 	 */
 	public function userAgent($type = 'all') {
 		$agentInfo = array (
